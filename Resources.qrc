@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>About.png</file>
+        <file>Copy.png</file>
+        <file>Exit.png</file>
+        <file>Open.png</file>
+        <file>Paste.png</file>
+        <file>Redo.png</file>
+        <file>Save.png</file>
+        <file>Undo.png</file>
+        <file>Customer.png</file>
+        <file>DashBoard.png</file>
+        <file>Email.png</file>
+        <file>Home.png</file>
+        <file>Knowledge.png</file>
+        <file>Vector (1).png</file>
+    </qresource>
+</RCC>

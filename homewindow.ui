@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeWindow</class>
+ <widget class="QMainWindow" name="HomeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1298</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 225, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Your Ticket</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createTicketButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>141</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ Create New Ticket</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CreateNewContactButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>131</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+Create New Contact</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>10</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="ticketTableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>1291</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Ticket Number</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Company name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Priority</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Created Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Projected Date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Category</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Desciption</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1298</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionDashBoard"/>
+    <addaction name="actionCustomer"/>
+    <addaction name="actionEmail"/>
+    <addaction name="actionKnowledge"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuSystem"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionHome"/>
+   <addaction name="separator"/>
+   <addaction name="actionDashBoard"/>
+   <addaction name="separator"/>
+   <addaction name="actionCustomer"/>
+   <addaction name="separator"/>
+   <addaction name="actionEmail"/>
+   <addaction name="separator"/>
+   <addaction name="actionKnowledge"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/Home.png</normaloff>:/Images/Home.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionDashBoard">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/DashBoard.png</normaloff>:/Images/DashBoard.png</iconset>
+   </property>
+   <property name="text">
+    <string>DashBoard</string>
+   </property>
+  </action>
+  <action name="actionCustomer">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/Customer.png</normaloff>:/Images/Customer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Customer </string>
+   </property>
+  </action>
+  <action name="actionEmail">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/Email.png</normaloff>:/Images/Email.png</iconset>
+   </property>
+   <property name="text">
+    <string>Email</string>
+   </property>
+  </action>
+  <action name="actionKnowledge">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/Knowledge.png</normaloff>:/Images/Knowledge.png</iconset>
+   </property>
+   <property name="text">
+    <string>Knowledge</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Images/Save.png</normaloff>:/Images/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionAttach">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/Images/Downloads/Vector (1).png</normaloff>:/Images/Downloads/Vector (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Attach</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

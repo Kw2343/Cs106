@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Group 177.png</file>
+        <file>Group 178.png</file>
+        <file>Vector.png</file>
+        <file>Vector-1.png</file>
+        <file>Vector-2.png</file>
+    </qresource>
+</RCC>
